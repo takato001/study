@@ -1,0 +1,1138 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="kadai0414.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+
+</script>
+ <style>
+  .slick-next:before {
+    content: '→';
+    color:#000;
+    margin-right:50px;
+   }
+
+   .slick-prev:before {
+    content: '←';
+    color:#000;
+   }
+
+ </style>
+
+
+<script>
+$(function(){
+      
+
+	$('.accordion1 p').click(function(){		$(this).next('ul').slideToggle();
+         $('accordion p.ac1').css('border-bottom','display');
+        
+	});
+
+        $('.content24').slick({
+         infinite: true,
+         arrows:true,
+         autoplay: true,
+         speed: 300,
+         slidesToShow: 1,
+         adaptiveHeight: true
+         });
+
+               
+
+       $("#left-menu").on("click",function(){
+		 	$("#mein2").slideToggle(2000);
+		 });
+
+
+       $("#left-mein").on('click' ,function(){
+			$("#slide").slideToggle(1000);
+			$("#menu2").slideToggle(1000);
+
+			$("body").animate({"backgroundColor":"blue"},1000 ,function(){
+				$("body").animate({"backgroundColor":"white"},1000);
+				$("#left-mein img").animate({"marginLeft":"+100px"},1000,function(){
+				   $("#left-mein img").animate({"marginLeft":"0px"},1000,function(){
+				   });
+                                });
+			});
+
+		
+		});
+
+
+
+
+
+});
+</script>
+</head>
+
+
+<body>
+<div id="wrapper">
+  <div id="menu">
+   <div id="left-menu" class="cf">
+      <h2>Skill Grow</h2>
+    </div>
+    <div id="center-menu">
+      <ul>
+       <a href="#mein2"><li>skill Growとは？</li></a>
+       <a href="#mein4"><li>受講内容</li></a>
+        <a href="mein3"><li>特徴</li></a>
+        <a href="#mein6"><li>講師紹介</li></a>
+        <a href="#mein7"><li>受講生の声</li></a>
+        <a href="#mein8"><li>よくある質問</li></a>
+        <a href="#mein55555"><li>コース</li></a>
+      </ul>
+    </div>
+    <div id="right-menu" class="cf">
+     <a href="#mein10"><p>お問い合わせ</p></a>
+    </div>
+  </div>
+ <!--menu-->
+ 
+  <div id="mein" class="cf"> 
+    <div id="left-mein" class="cf">
+      <img src="img/mein.jpg">
+       <div class="content1">
+       <p>
+        元エンジニアのプログラミング講師　兼　
+        キャリアアドバイザー
+       </p>
+       </div>
+       <div class="content2">
+         <a href="#mein6"><p>>>> 講師の紹介はこちら</p></a>
+       </div>
+    </div>
+    <div id="right-mein" class="cf">
+       <div class="content3">
+          <h2>未経験からエンジニアへ</h2>
+           <p>少人数生のプログラミングスクール</p>
+            <h3>Skill Grow</h3>
+       </div>
+       <div class="content4 cf">
+         <div class="content5 cf">
+           <p>まず<br><span>無料相談から</span></p>
+         </div>
+         <div class="content5 cf">
+           <p>応募資格無し<br><span>文系でも歓迎</span></p>
+         </div>
+         <div class="content5 cf">
+           <p>受講生と講師の割合<br><span>５人:１人</span></p>
+         </div>
+        </div>
+         <div id="right-menu-under" class="cf">
+           <div class="content6">
+              <ul>
+                <li>エンジニアの仕事とは</li>
+                <li>自分には適性があるのか</li>
+                <li>今後のキャリアは？</li>
+              </ul>
+            </div>
+            <div class="content7">
+            <a href="#mein10"><p>まずは講師に<br>無料で相談してみる</p></a> 
+            </div>
+         </div>
+       </div>
+    </div>
+<!--mein-->
+
+ <a name="mein2">
+  <div id="mein2">
+     <div class="content8">
+        <h3><span>Skill Grow</span>とは？</h3>
+        <p>
+           エンジニアとして<span>活躍</span>して、
+           エンジニアとして<span>キャリアの積む</span>ために
+           <span>ホンモノの技術や知識</span>を
+           身に付けるITスクール。<br>
+           専門のIT講師　兼　キャリアアドバイザーが、
+           <span>少人数制</span>で１人１人に向き合って、
+           <span>キャリアチェンジ</span>をサポート。 
+        </p>
+      </div>
+      <div id="mein2-under" class="cf">
+        <div id="mein2-under1" class="cf">
+           <div class="content9">
+             <i class="material-icons"></i>
+           </div>        
+           <div class="content10">
+              <p>無料相談・面談</p>
+           </div>
+           <div class="content11">
+             <p>未経験からエンジニアになり
+                活躍した現役のIT講師　兼　キャリアアドバイザー
+                と、まずは面談。<br>
+                自分の未来を明確しています。
+             </p>
+           </div>
+         </div>
+        <div id="mein2-under2" class="cf">
+           <div class="content9">
+             <i class="material-icons"></i>
+           </div>        
+           <div class="content10">
+              <p>少人数制講義</p>
+           </div>
+           <div class="content11">
+             <p>しっかり実力をつけてもらうために受講生は
+                5人講師1人の少人数制で講義を受講<br>
+                少人数制にすることで手厚いフォローが可能
+             </p>
+           </div>
+         </div>
+        <div id="mein2-under2" class="cf">
+           <div class="content9">
+             <i class="material-icons"></i>
+           </div>        
+           <div class="content10">
+              <p>キャリア支援</p>
+           </div>
+           <div class="content11">
+             <p>今まで教えてくれた講師が、
+                あなたに合った企業への転職をお手伝い！！<br>
+                面接のトレーニングなども行います。
+             </p>
+           </div>
+         </div>
+       </div>
+       </a>
+<!--mein2-->
+       <a name="mein3">
+       <div id="mein3" class="cf">
+          <div class="content12">
+            <p>こんな方にオススメ</p>
+          </div>
+          <div class="content13">
+            <p>エンジニアのキャリアチェンジにに興味がある！！<br>けど・・・</p>
+          </div>
+          <div class="content14">
+            <ul>
+              <li>自分にエンジニアとしての適性があるか不安</li>
+              <li>業界のことがイマイチわからない</li>
+              <li>中途半端ではなく、本当に実力をつけてから転職したい</li>
+            </ul>
+          </div>
+       </div>
+      </a>
+<!--mein3-->
+      <a name="mein4">
+       <div id="mein4" class="cf">
+            <div class="content8">
+             <h3><span>Skill Grow</span>の受講内容/スケジュール/料金</h3>
+            </div>
+          <div class="mein4-1 cf">
+          <div class="content15">
+            <div class="content16">          
+              <h3>本気で”次世代のIT人材”になるためのプログラム</h3>
+            </div>
+            <div class="content17">
+               <p>1stステップ　IT業界のことを理解することからスタートです。<br>
+                 ただ技術を身につけるだけではなく業界構造たネットの仕組みを理解します<br>
+                 2stステップ　いよいよプログラミングの学習スタート<br>
+                 メイン言語は『JAVA』。WEB/アプリ系の学習スタート。<br>
+                 3st ステップ　学習した内容を活かして、実際にシステムを構築。実践を通して、真の実力をつけていきましょう。　 
+               </p>
+            </div>
+          </div>
+           <div class="content18">
+              <img src="img/pc.jpg">
+           </div>
+           <div class="content19">
+              <p>受講内容</p> 
+           </div>
+         </div>
+        <div class="mein4-1 cf"> 
+         <div class="content15">
+           <div class="content16">          
+             <h3>講義＋自己学習のハイブリット学習</h3>
+           </div>
+           <div class="content17">
+              <p>週に2コマの授業の実施します。1コマの授業につき、ご自身のスケジュールに合わせて参加できます。授業の時間は働いている人でも参加できるよう、夜に実施します。<br>
+                講義の際に、課題を出しますので、後は自分で学習します。少人数制のため、昼夜問わず、いつでも専属講師に質問できます。 <br>
+              </p>
+              <p><span>POINT>> </span>実施期間は3ヶ月目安</p>
+           </div>
+         </div>
+           <div class="content18">
+              <img src="img/karen.jpg">
+           </div>
+           <div class="content19">
+              <p>スケジュール</p> 
+           </div>
+         </div>
+        <div class="mein4-1 cf">
+         <div class="content15">
+           <div class="content16">          
+             <h3>低価格で”次世代のIT人材”に</h3>
+           </div>
+           <div class="content17">
+              <p>3ヶ月で30万<br>
+                 <span>POINT >></span><br>
+              </p>
+               <ul>
+                 <li>分割支払いの相談</li>
+                 <li>契約から14日間の金額キャッシュバック制度あり</li>
+                 <li>転職成功で20万円キャッシュバック</li>
+               </ul>
+           </div>
+         </div>
+           <div class="content18">
+              <img src="img/buta.jpg">
+           </div>
+           <div class="content19">
+              <p>料金</p> 
+           </div>
+         </div>
+       </div>
+       </a>
+       
+<!--mein4-->
+      <a name="mein5"> 
+       <div id="mein5" class="cf">
+            <div class="content8">
+             <h3><span>Skill Grow</span>の受講内容/スケジュール/料金</h3>
+            </div>
+          <div class="content20">
+            <table>
+                <tr height="40">
+              <th width="150" class="color1">比較項目</th>
+             <th width="300" class="color">Skill Drow</th>
+              <th width="180" class="color1">無料スクール</th>
+              <th width="220" class="color1">有料スクール</th>
+              <th width="220" class="color1">オンライスクール</th>
+              <th width="180" class="color1">独学</th>
+            </table>
+          </div>
+            <div class="content21">
+            <table>
+                <tr height="60">
+              <td width="150" class="color1">学習時間</td>
+              <th width="300" class="color1-1">3ヶ月</th>
+              <td width="180" class="color1">1ヶ月</td>
+              <td width="220" class="color1">3ヶ月</td>
+              <td width="220" class="color1">12週間</td>
+              <td width="180" class="color1">1年<br>※個人差があります</td>
+            </table>
+            <table>
+                <tr height="90">
+              <td width="150" class="color1">費用</td>
+             <th width="300" class="color1-1"><span>¥300,000</span><br>¥200,000<br>キャッシュバック制度あり</th>
+              <td width="180" class="color1">¥0</td>
+              <td width="220" class="color1">￥489,000 <td>
+              <td width="220" class="color1">￥200,000</td>
+              <td width="180" class="color1">￥0
+</td>
+            </table>
+            <table>
+                <tr height="60">
+              <td width="150" class="color1">学習形式</td>
+             <th width="300" class="color1-1">通学授業形式＋オンライン個別指導</th>
+              <td width="180" class="color1">通学授業形式</td>
+              <td width="220" class="color1">通学個別指導</td>
+              <td width="220" class="color1">オンライン学習</td>
+              <td width="180" class="color1">自宅学習</td>
+            </table>
+            <table>
+                <tr height="90">
+              <td width="150" class="color1">質問しやすさ</td>
+             <th width="300" class="color1-1"><span>◎</span><br>少人数制のためスピーディーに対応可能</th>
+              <td width="180" class="color1"><span>△</span><br>授業が空いた時間のみ</td>
+              <td width="220" class="color1"><span>◎</span><br>複数人のメンターにいつでも質問可能</td>
+              <td width="220" class="color1"><span>△</span><br>回答までに時間がかかる</td>
+              <td width="180" class="color1"><span>×</span><br>自分で頑張るしかない</td>
+            </table>
+            <table>
+                <tr height="90">
+              <td width="150" class="color1">制作実績</td>
+             <th width="300" class="color1-1"><span>◎</span><br>しっかり1人で制作実績を作る</th>
+              <td width="180" class="color1"><span>×</span><br>無し</td>
+              <td width="220" class="color1"><span>◯</span><br>共同制作</td>
+              <td width="220" class="color1"><span>△</span><br>決められた制作物のみ</td>
+              <td width="180" class="color1"><span>×</span><br>自分で頑張るしかない</td>
+            </table>
+            <table>
+                <tr height="90">
+              <td width="150" class="color1">就職支援</td>
+             <th width="300" class="color1-1"><span>◎</span><br>講師がそのままキャリアアドバイザーに</th>
+              <td width="180" class="color1"><span>△</span><br>提携先企業のみ</td>
+              <td width="220" class="color1"><span>◎</span><br>専属キャリアアドバイザー</td>
+              <td width="220" class="color1"><span>△</span><br>スカウトが届くのみ</td>
+              <td width="180" class="color1"><span>×</span><br>自分で頑張るしかない</td>
+            </table>
+            <table>
+                <tr height="60">
+              <td width="150" class="color1">保証制度</td>
+             <th width="300" class="color1-1">14日間返金保証就職成功保証</th>
+              <td width="180" class="color1">無し</td>
+              <td width="220" class="color1">14日間返金保証就職成功保証</td>
+              <td width="220" class="color1">無し</td>
+              <td width="180" class="color1">無し</td>
+            </table>
+            </div>      
+          </div>
+         </a>
+<!--mein5-->
+       <a name="mein6"> 
+        <div id="mein6" class="cf">
+            <div class="content8">
+             <h3><span>Skill Grow</span>no
+の講師　兼　キャリアアドバイザー</h3>
+            </div>
+         <div class="mein6-1">
+          <div class="content22">
+            <img src="img/kousi.jpg">
+          </div>
+          <div class="content23">
+            <h3>経歴</h3>
+             <p>地元の鉄銅製造工場に勤務<br>
+                1年ほど勤務した後、
+               自分に何からのスキルを身につけようと考え、語学留学の為、アメリカへ単身渡航。<br>
+渡航をきっかけにITに興味をもち、帰国後にすぐにITスクールへ入学。<br>
+JAVAの基礎知識を身につけ、未経験からIT業界へ就職する。<br>
+その後、JAVAエンジニアとして10年以上プロジェクトに従事。<br>
+様々なプロジェクトを経験すると同時に人材育成も経験。
+現場での実績をもとに現在はJAVA研修講師、キャリア度バイザーを兼任する。
+
+             </p>
+              <h3>メッセージ</h3>
+               <p>私はITのことは1つも知らない状態からJAVAの勉強をはじめました。<br>
+そんな僕でも、膨大な時間をかけて、努力したおかげで人様に研修できるほどの実力をつけることができました。<br>
+<br>
+しかし、とても時間がかかり、苦労したことも事実です。
+そこで私は、”少人数制で1人1人にしっかり教える”ためにSkill Drowのサービスをスタートしました。<br>
+<br>
+本物の実力をつけて、エンジニアとしてデビューを果たしましょう！<br>
+</p>
+          </div>
+         </div>
+        </div>
+       </a>
+<!--mein6-->
+       <a name="mein7">
+        <div id ="mein7">
+            <div class="content8">
+             <h3><span>Skill Grow</span>の受講生の声</h3>
+            </div>
+           <div class="mein7-1">
+             <div class="content24">
+               <div class="content24-1">             
+                  <div class="content25">
+                     <img src="img/seito.jpg">
+                        <h3>K.Wさん</h3>
+                          <p>
+                            年齢24 <br>前職:アパレル販売
+                          </p>
+                  </div>
+                  <div class="content26">
+                     <p>アパレルの祖語とは好きでしたが、将来のキャリアに限界を感じてしまいました。<br>
+また、服やアクセサリーはインターネットで買う時代になってきていると感じたので、ITの波に乗り遅れないように！と思ってSkill Growに参加しました<br>
+多少苦労しましたが（笑）川原さんのおかげで乗り越えられました！！<br>
+<br>
+今ではファッションECの開発に携わっています。<br>
+
+                     </p>
+                  </div>
+               </div>
+               <div class="content24-1">             
+                  <div class="content25">
+                     <img src="img/seito1.jpg">
+                        <h3>K.Wさん</h3>
+                          <p>
+                            年齢24 <br>前職:アパレル販売
+                          </p>
+                  </div>
+                  <div class="content26">
+                     <p>アパレルの祖語とは好きでしたが、将来のキャリアに限界を感じてしまいました。<br>
+また、服やアクセサリーはインターネットで買う時代になってきていると感じたので、ITの波に乗り遅れないように！と思ってSkill Growに参加しました<br>
+多少苦労しましたが（笑）川原さんのおかげで乗り越えられました！！<br>
+<br>
+今ではファッションECの開発に携わっています。<br>
+
+                     </p>
+                  </div>
+               </div>
+               <div class="content24-1">             
+                  <div class="content25">
+                     <img src="img/seito3.jpg">
+                        <h3>K.Wさん</h3>
+                          <p>
+                            年齢24 <br>前職:アパレル販売
+                          </p>
+                  </div>
+                  <div class="content26">
+                     <p>アパレルの祖語とは好きでしたが、将来のキャリアに限界を感じてしまいました。<br>
+また、服やアクセサリーはインターネットで買う時代になってきていると感じたので、ITの波に乗り遅れないように！と思ってSkill Growに参加しました<br>
+多少苦労しましたが（笑）川原さんのおかげで乗り越えられました！！<br>
+<br>
+今ではファッションECの開発に携わっています。<br>
+
+                     </p>
+                  </div>
+              </div>
+           </div>
+        </div>
+       </a>
+<!--mein7-->
+       <a name="mein8">
+       <div id="mein8">
+           <div class="content8">               <h3>よくある質問</h3>
+           </div>
+           <div class="content27">
+<ul class="accordion1">
+    <li>
+        <p class="ac1">Q.実力がついて、エンジニアとして働き始めるまで、どのくらいの時間がかかりましたか？</p>
+        <ul class="inner">
+            <li class="content1-1">A.目安は3ヶ月くらいです。ただ3ヶ月を過ぎても、実力がつくまでサポートさせて頂きます。</li>
+        </ul>
+    </li>
+    <li>
+        <p class="ac1">Q.文系出身でも、受講は可能でしょうか？</p>
+        <ul class="inner">
+            <li class="content1-1">A.もちろん可能です。文系出身者でも問題はありません。過去の受講者でも文系の比率が多いです。</li>
+        </ul>
+    </li>
+    <li>
+        <p class="ac1">Q.支払方法は分割払いは可能でしょうか？</p>
+        <ul class="inner">
+            <li class="content1-1">A.はい。可能です。ご相談ください。</li>
+        </ul>
+    </li>
+    <li>
+        <p class="ac1">Q.自分でPCを用意する必要がありますか？レンタルの制度はありますか？</p>
+        <ul class="inner">
+            <li class="content1-1">A.自分でご用意いただくことがベストですがPCレンタルの制度もございます。お気軽にご相談ください。</li>
+        </ul>
+    </li>
+    <li>
+        <p class="ac1">Q.就業中なのですが、受講は可能ですか？</p>
+        <ul class="inner">
+            <li class="content1-1">A.可能です。講義は夜に実施しますので、就業後に通える時間に設定しています。</li>
+        </ul>
+    </li>
+    <li>
+        <p class="ac1">Q.どのくらい足を運ぶことが可能でしょうか</p>
+        <ul class="inner">
+            <li class="content1-1">A.週2回です。オンライン講義も対応しております。</li>
+        </ul>
+    </li>
+    <li>
+        <p class="ac1">Q.どのくらいのレベルに到達しますか？</p>
+        <ul class="inner">
+            <li class="content1-1">A.回答が入ります</li>
+        </ul>
+    </li>
+    <li>
+        <p class="ac1">Q.自宅学習時間は何時間くらい必要でしょうか？</p>
+        <ul class="inner">
+            <li class="content1-1"> A.回答が入ります</li>
+        </ul>
+    </li>
+    <li>
+        <p class="ac1">Q.事前に必要な知識はありますか？</p>
+        <ul class="inner">
+            <li class="content1-1">A.回答が入ります</li>
+        </ul>
+    </li>
+    <li>
+        <p class="ac1">Q.ビデオ通話、チャットでの質問に回数制限はありますか？</p>
+        <ul class="inner">
+            <li class="content1-1">A.回答が入ります</li>
+        </ul>
+    </li>
+    <li>
+        <p class="ac1">Q.質問はいつ、どのように行えますか？</p>
+        <ul class="inner">
+            <li class="content1-1">A.回答が入ります</li>
+        </ul>
+    </li>
+    <li>
+        <p class="ac1">Q.全額保証期間は何日前までに申し出せば利用できますか？</p>
+        <ul class="inner">
+            <li class="content1-1">A.回答が入ります</li>
+        </ul>
+    </li>
+    <li>
+        <p class="ac1">Q. 途中で辞めたい場合は、返金されますか？</p>
+        <ul class="inner">
+            <li class="content1-1">A.回答が入ります</li>
+        </ul>
+    </li>
+</ul>
+            </div>
+       </div>
+       </a>
+<!--mein8-->
+            <a name="mein9">
+            <div class="content8">
+             <h3><span>Skill Grow</span>コースの概要</h3>
+            </div>
+        <div id="mein9" class="cf">
+           <div class="content28 cf">        
+              <div class="content29">
+                 <h3>サービス名</h3>
+              </div>
+              <div class="content30">
+                 <p>Skill Grow(スキル　グロー)</p>
+              </div> 
+           </div>
+           <div class="content28 cf">        
+              <div class="content29">
+                 <h3>費用</h3>
+              </div>
+              <div class="content30">
+                 <p>¥300,000-<br>
+                    (分割支払可能・14日間全額返金保証制度あり)
+                 </p>
+              </div> 
+           </div>
+           <div class="content28 cf">        
+              <div class="content29">
+                 <h3>特典</h3>
+              </div>
+              <div class="content30">
+                 <p>転職成功で¥200,000-キャッシュバック</p>
+              </div> 
+           </div>
+           <div class="content28 cf">        
+              <div class="content29">
+                 <h3>講師</h3>
+              </div>
+              <div class="content30">
+                <a href="#mein6"><p>川原諒介<span>講師の紹介はこちら>>>></span></p></a>
+              </div> 
+           </div>
+           <div class="content28 cf">        
+              <div class="content29">
+                 <h3>開催場所</h3>
+              </div>
+              <div class="content30">
+                 <p>〒160-0022 東京都新宿区新宿1-9-5 新宿御苑さくらビル　9F<br>新宿御苑前　１分</p>
+              </div> 
+           </div>
+           <div class="content28 cf">        
+              <div class="content29">
+                 <h3>期間</h3>
+              </div>
+              <div class="content30">
+                 <p>３ヶ月目安</p>
+              </div> 
+           </div>
+           <div class="content28-1 cf">        
+              <div class="content29">
+                 <h3>運営会社</h3>
+              </div>
+              <div class="content30">
+                 <p>株式会社　シャンテリー</p>
+              </div> 
+           </div>
+           <div class="content31">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.531301218362!2d139.7098923503175!3d35.68854113708226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ce9dd1e5a2f%3A0xb6040f9e8a637c92!2z44CSMTYwLTAwMjIg5p2x5Lqs6YO95paw5a6_5Yy65paw5a6_77yR5LiB55uu77yZ4oiS77yV!5e0!3m2!1sja!2sjp!4v1555562640765!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <a href="#mein10"><p>まずは講師に無料で相談してみる</p></a>
+          </div>   
+        </div>
+        </a>
+<!--mein9-->  
+         <a name="mein10">
+         <div id="mein10">
+            <div class="content8">
+             <h3><span>Skill Grow</span>無料面談申し込みフォーム</h3>
+            </div>
+        <form>
+           <div class="content36 cf">
+            <div class="content33 cf">
+              <div class="content34">    
+                 <h3>お名前</h3>              
+              </div> 
+              <div class="content35">
+               <p>必須</p>
+              </div>
+              <div class="content32">               
+                 <p>お名前を入力してください</p>
+	         <input type="text" name="text" placeholder="例）田中　太郎">
+              </div>
+            </div>
+           </div>
+
+           <div class="content36 cf">
+            <div class="content33 cf">
+              <div class="content34">    
+                 <h3>携帯番号</h3>              
+              </div> 
+              <div class="content35">
+               <p>必須</p>
+              </div>
+              <div class="content32">               
+                 <p>正しい電話番号を入力してください</p>
+	<input type="text" name="text" placeholder="例）090-××××-××××">
+              </div>
+            </div>
+           </div>
+
+           <div class="content36 cf">
+            <div class="content33 cf">
+              <div class="content34">    
+                 <h3>E-mail</h3>              
+              </div> 
+              <div class="content35">
+               <p>必須</p>
+              </div>
+              <div class="content32">               
+                 <p>正しいメールアドレスを入力してください</p>
+	<input type="text" name="text" placeholder="例）bafbvauoaeri@gmial.com">
+              </div>
+            </div>
+           </div>
+           <div class="content36 cf">
+            <div class="content33 cf">
+              <div class="content34">    
+                 <h3>年齢</h3>              
+              </div> 
+              <div class="content35">
+               <p>必須</p>
+              </div>
+              <div class="content32">               
+                 <p>年齢を入力してください</p>
+	<input type="text" name="text" placeholder="例）◯◯歳">
+              </div>
+            </div>
+           </div>
+           <div class="content36 cf">
+            <div class="content33 cf">
+              <div class="content34">    
+                 <h3>住所</h3>              
+              </div> 
+              <div class="content35">
+               <p>必須</p>
+              </div>
+              <div class="content32">               
+                 <p>住所を入力してくださ</p>
+	<input type="text" name="text" placeholder="例）東京都新宿区新宿区1-9-5">
+              </div>
+            </div>
+           </div>
+
+           <div class="content36 cf">
+            <div class="content33-1 cf">
+              <div class="content34">    
+                 <h3>面接希望日時</h3>              
+              </div> 
+              <div class="content35">
+               <p>必須</p>
+              </div>
+              <div class="content32">               
+                 <p>面接希望日時を入力してください</p>
+              <div class="content32-1-1 cf">
+              <div class="content32-1"> 
+               <div class="content37">
+                <p>第1希望</p>
+               </div>
+               <div class="content38"> 
+               <div class="content39">               
+           	<select name="selectbox">
+		<option value="2019">2019</option>
+		<option value="2019">2020</option>
+		<option value="2019">2021</option>
+                  
+	</select>
+               </div>
+                <div class="content39">
+                 <p>年</p>
+               </div>
+             </div>
+            </div> 
+              <div class="content32-1">
+    
+               <div class="content38"> 
+               <div class="content39">               
+           	<select name="selectbox">
+		<option value="2019">1</option>
+		<option value="2019">2</option>
+		<option value="2019">3</option>
+		<option value="2019">4</option>
+		<option value="2019">5</option>
+		<option value="2019">6</option>
+		<option value="2019">7</option>
+		<option value="2019">8</option>
+		<option value="2019">9</option>
+		<option value="2019">10</option>
+		<option value="2019">11</option>
+		<option value="2019">12</option>
+                  
+	</select>
+               </div>
+                <div class="content39">
+                 <p>月</p>
+               </div>
+             </div>
+            </div> 
+              <div class="content32-1">
+    
+               <div class="content38"> 
+               <div class="content39">               
+           	<select name="selectbox">
+		<option value="2019">1</option>
+		<option value="2019">2</option>
+		<option value="2019">3</option>
+		<option value="2019">4</option>
+		<option value="2019">5</option>
+		<option value="2019">6</option>
+		<option value="2019">7</option>
+		<option value="2019">8</option>
+		<option value="2019">9</option>
+		<option value="2019">10</option>
+		<option value="2019">11</option>
+		<option value="2019">12</option>
+		<option value="2019">13</option>
+		<option value="2019">14</option>
+		<option value="2019">15</option>
+		<option value="2019">16</option>
+		<option value="2019">17</option>
+		<option value="2019">18</option>
+		<option value="2019">19</option>
+		<option value="2019">20</option>
+		<option value="2019">21</option>
+		<option value="2019">22</option>
+		<option value="2019">23</option>
+		<option value="2019">24</option>
+		<option value="2019">25</option>
+		<option value="2019">26</option>
+		<option value="2019">27</option>
+		<option value="2019">28</option>
+		<option value="2019">29</option>
+		<option value="2019">30</option>
+		<option value="2019">31</option>
+                  
+	</select>
+               </div>
+                <div class="content39">
+                 <p>日</p>
+               </div>
+             </div>
+            </div> 
+              <div class="content32-1">
+    
+               <div class="content38"> 
+               <div class="content39">               
+           	<select name="selectbox">
+		<option value="2019">9</option>
+		<option value="2019">10</option>
+		<option value="2019">11</option>
+		<option value="2019">12</option>
+		<option value="2019">13</option>
+		<option value="2019">14</option>
+		<option value="2019">15</option>
+		<option value="2019">16</option>
+		<option value="2019">17</option>
+		<option value="2019">18</option>
+		<option value="2019">19</option>
+		<option value="2019">20</option>
+		<option value="2019">21</option>
+		<option value="2019">22</option>
+                  
+	</select>
+               </div>
+                <div class="content39">
+                 <p>時</p>
+               </div>
+             </div>
+            </div> 
+           </div>
+
+      
+              <div class="content32-1-1 cf">
+               <div class="content32-1">
+               <div class="content37">
+                <p>第2希望</p>
+               </div>
+               <div class="content38"> 
+               <div class="content39">               
+           	<select name="selectbox">
+		<option value="2019">2019</option>
+		<option value="2019">2020</option>
+		<option value="2019">2021</option>
+                  
+	</select>
+               </div>
+                <div class="content39">
+                 <p>年</p>
+               </div>
+             </div>
+            </div> 
+              <div class="content32-1">
+    
+               <div class="content38"> 
+               <div class="content39">               
+           	<select name="selectbox">
+		<option value="2019">1</option>
+		<option value="2019">2</option>
+		<option value="2019">3</option>
+		<option value="2019">4</option>
+		<option value="2019">5</option>
+		<option value="2019">6</option>
+		<option value="2019">7</option>
+		<option value="2019">8</option>
+		<option value="2019">9</option>
+		<option value="2019">10</option>
+		<option value="2019">11</option>
+		<option value="2019">12</option>
+                  
+	</select>
+               </div>
+                <div class="content39">
+                 <p>月</p>
+               </div>
+             </div>
+            </div> 
+              <div class="content32-1">
+    
+               <div class="content38"> 
+               <div class="content39">               
+           	<select name="selectbox">
+		<option value="2019">1</option>
+		<option value="2019">2</option>
+		<option value="2019">3</option>
+		<option value="2019">4</option>
+		<option value="2019">5</option>
+		<option value="2019">6</option>
+		<option value="2019">7</option>
+		<option value="2019">8</option>
+		<option value="2019">9</option>
+		<option value="2019">10</option>
+		<option value="2019">11</option>
+		<option value="2019">12</option>
+		<option value="2019">13</option>
+		<option value="2019">14</option>
+		<option value="2019">15</option>
+		<option value="2019">16</option>
+		<option value="2019">17</option>
+		<option value="2019">18</option>
+		<option value="2019">19</option>
+		<option value="2019">20</option>
+		<option value="2019">21</option>
+		<option value="2019">22</option>
+		<option value="2019">23</option>
+		<option value="2019">24</option>
+		<option value="2019">25</option>
+		<option value="2019">26</option>
+		<option value="2019">27</option>
+		<option value="2019">28</option>
+		<option value="2019">29</option>
+		<option value="2019">30</option>
+		<option value="2019">31</option>
+                  
+	</select>
+               </div>
+                <div class="content39">
+                 <p>日</p>
+               </div>
+             </div>
+            </div> 
+              <div class="content32-1">
+    
+               <div class="content38"> 
+               <div class="content39">               
+           	<select name="selectbox">
+		<option value="2019">9</option>
+		<option value="2019">10</option>
+		<option value="2019">11</option>
+		<option value="2019">12</option>
+		<option value="2019">13</option>
+		<option value="2019">14</option>
+		<option value="2019">15</option>
+		<option value="2019">16</option>
+		<option value="2019">17</option>
+		<option value="2019">18</option>
+		<option value="2019">19</option>
+		<option value="2019">20</option>
+		<option value="2019">21</option>
+		<option value="2019">22</option>
+                  
+	</select>
+               </div>
+                <div class="content39">
+                 <p>時</p>
+               </div>
+             </div>
+            </div> 
+          </div>
+              <div class="content32-1-1 cf">
+              <div class="content32-1">
+    
+               <div class="content37">
+                <p>第3希望</p>
+               </div>
+               <div class="content38"> 
+               <div class="content39">               
+           	<select name="selectbox">
+		<option value="2019">2019</option>
+		<option value="2019">2020</option>
+		<option value="2019">2021</option>
+                  
+	</select>
+               </div>
+                <div class="content39">
+                 <p>年</p>
+               </div>
+             </div>
+            </div> 
+              <div class="content32-1">
+    
+               <div class="content38"> 
+               <div class="content39">               
+           	<select name="selectbox">
+		<option value="2019">1</option>
+		<option value="2019">2</option>
+		<option value="2019">3</option>
+		<option value="2019">4</option>
+		<option value="2019">5</option>
+		<option value="2019">6</option>
+		<option value="2019">7</option>
+		<option value="2019">8</option>
+		<option value="2019">9</option>
+		<option value="2019">10</option>
+		<option value="2019">11</option>
+		<option value="2019">12</option>
+                  
+	</select>
+               </div>
+                <div class="content39">
+                 <p>月</p>
+               </div>
+             </div>
+            </div> 
+              <div class="content32-1">
+    
+               <div class="content38"> 
+               <div class="content39">               
+           	<select name="selectbox">
+		<option value="2019">1</option>
+		<option value="2019">2</option>
+		<option value="2019">3</option>
+		<option value="2019">4</option>
+		<option value="2019">5</option>
+		<option value="2019">6</option>
+		<option value="2019">7</option>
+		<option value="2019">8</option>
+		<option value="2019">9</option>
+		<option value="2019">10</option>
+		<option value="2019">11</option>
+		<option value="2019">12</option>
+		<option value="2019">13</option>
+		<option value="2019">14</option>
+		<option value="2019">15</option>
+		<option value="2019">16</option>
+		<option value="2019">17</option>
+		<option value="2019">18</option>
+		<option value="2019">19</option>
+		<option value="2019">20</option>
+		<option value="2019">21</option>
+		<option value="2019">22</option>
+		<option value="2019">23</option>
+		<option value="2019">24</option>
+		<option value="2019">25</option>
+		<option value="2019">26</option>
+		<option value="2019">27</option>
+		<option value="2019">28</option>
+		<option value="2019">29</option>
+		<option value="2019">30</option>
+		<option value="2019">31</option>
+                  
+	</select>
+               </div>
+                <div class="content39">
+                 <p>日</p>
+               </div>
+             </div>
+            </div> 
+              <div class="content32-1">
+    
+               <div class="content38"> 
+               <div class="content39">               
+           	<select name="selectbox">
+		<option value="2019">9</option>
+		<option value="2019">10</option>
+		<option value="2019">11</option>
+		<option value="2019">12</option>
+		<option value="2019">13</option>
+		<option value="2019">14</option>
+		<option value="2019">15</option>
+		<option value="2019">16</option>
+		<option value="2019">17</option>
+		<option value="2019">18</option>
+		<option value="2019">19</option>
+		<option value="2019">20</option>
+		<option value="2019">21</option>
+		<option value="2019">22</option>
+                  
+	</select>
+               </div>
+                <div class="content39">
+                 <p>時</p>
+               </div>
+             </div>
+            </div> 
+          </div>
+             </div>
+            </div>
+           </div>
+
+           <div class="content36 cf">
+            <div class="content33-1 cf">
+              <div class="content34">    
+                 <h3>志望理由・その他</h3>              
+              </div> 
+              <div class="content32">               
+	<textarea name="textarea" cols="120" rows="9" placeholder="志望理由"></textarea>
+              </div>
+            </div>
+           </div>
+
+          <div class="content36">
+          <div class="content33-2">
+        	<input type="submit" value="送信">
+          </div>
+         </div>
+    </form>
+
+
+         </div>
+         </a>
+<!--mein10-->
+        
+         <div id="mein11"> 
+           <h3>Skill Grow</h3>
+           <p>少人数制からエンジニアへ<br>
+             少人数制のプログラミングスクール
+           </p>
+         </div>
+ <!--mein11--> 
+</div>
+<!--wrapper-->
+          <div id="fotter">
+            <p>Copyright@ Shantery Corporation All Rights
+          </div>
+<!--fotter-->     
+           <div id="fotter-under">
+             <div class="content41">
+              <div class="content42">
+                <p>まずは無料で講師にお問いわせしてみませんか？</p>
+              </div>
+              <div class="content43">
+                <a href="#mein10"><p>お問い合わせはこちら</p></a>
+              </div>
+             </div>
+           </div>
+
+</body>
+
+</html>
